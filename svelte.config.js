@@ -19,9 +19,9 @@ const config = {
                 "img-src": ["self", "data:", "https://*.maps.yandex.net", "https://api-maps.yandex.ru", "https://yandex.ru"],
                 "child-src": ["self", "https://api-maps.yandex.ru"],
                 "frame-src": ["self", "https://api-maps.yandex.ru"],
-                "script-src": ["self", "https://api-maps.yandex.ru", "https://suggest-maps.yandex.ru", "http://*.maps.yandex.net", "https://yandex.ru", "https://yastatic.net"],
+                "script-src": ["self", "unsafe-inline", "https://api-maps.yandex.ru", "https://suggest-maps.yandex.ru", "http://*.maps.yandex.net", "https://yandex.ru", "https://yastatic.net"],
                 "connect-src": ["self", "https://api-maps.yandex.ru", "https://suggest-maps.yandex.ru", "https://*.maps.yandex.net", "https://yandex.ru", "https://*.taxi.yandex.net"],
-                "style-src": ["self", "blob:"],
+                "style-src": ["self", "blob:", "unsafe-inline"],
             }
         },
         files: {
