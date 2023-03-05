@@ -4,6 +4,7 @@
     import Map from "$lib/components/Map.svelte";
     import Charts from "$lib/components/Charts.svelte";
     import type { PageData } from "./$types";
+    import { browser } from "$app/environment";
     export let data: PageData;
     let my_data: SportObject[] = [];
     let content: any = {
@@ -13,7 +14,7 @@
     };
     $: {
         my_data = data.data;
-        console.info("data", my_data);
+        if (browser) console.info("data", my_data);
     }
 </script>
 

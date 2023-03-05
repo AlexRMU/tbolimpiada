@@ -26,10 +26,7 @@ const config = {
         },
         files: {
             hooks: { server: "./src/hooks.server.ts" },
-            lib: "./src/lib/",
-            routes: "./src/routes/",
             appTemplate: "./src/index.html",
-            errorTemplate: "./src/error.html",
         },
     },
 };

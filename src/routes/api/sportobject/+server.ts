@@ -10,9 +10,7 @@ export const GET = (async (event) => {
 
 export const POST = (async (event) => {
     const body = await event.request.json();
-    console.log("body", body);
     const obj = await SportObject.findById(body._id).exec();
-    console.log("obj", obj);
     if (obj) {
         Object.keys(definitions).map((key) => {
             const k = key as keyof Definitions;
