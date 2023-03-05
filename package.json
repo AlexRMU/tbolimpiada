@@ -1,0 +1,38 @@
+{
+    "name": "tbolimpiada",
+    "version": "1.0.0",
+    "type": "module",
+    "browserslist": [
+        "defaults",
+        "not dead"
+    ],
+    "scripts": {
+        "dev": "cross-env-shell NODE_OPTIONS=\"--inspect\" vite dev",
+        "build": "cross-env-shell NODE_OPTIONS=\"--max-old-space-size=16000\" vite build && cp ./src/server.js ./build/server.js",
+        "server": "cross-env-shell PORT=8080 NODE_OPTIONS=\"--inspect\" node build/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlexRMU/tbolimpiada.git"
+    },
+    "dependencies": {
+        "@fastify/helmet": "^10.1.0",
+        "@fastify/rate-limit": "^7.6.0",
+        "@sveltejs/adapter-node": "1.2.0",
+        "@sveltejs/kit": "1.8.8",
+        "@types/node": "^18.14.2",
+        "@zerodevx/svelte-toast": "^0.9.2",
+        "apexcharts": "^3.37.1",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.0.3",
+        "fastify": "^4.13.0",
+        "html-minifier-terser": "^7.1.0",
+        "mongoose": "^7.0.0",
+        "svelte": "^3.55.1",
+        "svelte-jsoneditor": "^0.14.10",
+        "svelte-preprocess": "^5.0.1",
+        "typescript": "^4.9.5",
+        "vite": "^4.1.4",
+        "@types/yandex-maps": "^2.1.29"
+    }
+}

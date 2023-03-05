@@ -1,0 +1,64 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "lib": [
+            "DOM",
+            "ESNext",
+            "WebWorker"
+        ],
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "target": "ESNext",
+        "allowJs": true,
+        "checkJs": true,
+        "importsNotUsedAsValues": "error",
+        "allowSyntheticDefaultImports": true,
+        "allowUmdGlobalAccess": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "alwaysStrict": true,
+        "noEmitHelpers": false,
+        "noEmitOnError": true,
+        "noUncheckedIndexedAccess": true,
+        "strictFunctionTypes": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "exactOptionalPropertyTypes": false,
+        "noImplicitReturns": false,
+        "noImplicitOverride": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "noErrorTruncation": true,
+        "strictPropertyInitialization": true,
+        "useUnknownInCatchVariables": false,
+        "paths": {
+            "$lib/*": [
+                "./src/lib/*"
+            ],
+            "$lib": [
+                "./src/lib"
+            ]
+        }
+    },
+    "extends": "./.svelte-kit/tsconfig.json",
+    "include": [
+        "./",
+        "./.svelte-kit/ambient.d.ts"
+    ],
+    "exclude": [
+        "./build/",
+        "./node_modules/",
+        "./.svelte-kit/"
+    ]
+}
