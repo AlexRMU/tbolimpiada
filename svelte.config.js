@@ -10,7 +10,7 @@ const config = {
     }),
     kit: {
         adapter: adapter({ out: "build", precompress: true }),
-        version: { name: process.env.VERSION, pollInterval: 60 * 1000 },
+        version: { name: Date.now() + "", pollInterval: 60 * 1000 },
         inlineStyleThreshold: 1024,
         csrf: { checkOrigin: false },
         csp: {
