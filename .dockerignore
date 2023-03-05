@@ -1,0 +1,7 @@
+*
+!vite.config.ts
+!tsconfig.json
+!svelte.config.js
+!package.json
+!.env
+!/src/

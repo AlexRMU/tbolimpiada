@@ -5,6 +5,7 @@ import fastify from "fastify";
 import rate_limit from "@fastify/rate-limit";
 import helmet from "@fastify/helmet";
 const max_body = 1024 * 1024 * 10;
+console.log("starting");
 
 (async () => {
     try {
@@ -68,6 +69,7 @@ const max_body = 1024 * 1024 * 10;
             handler(req.raw, res.raw);
         });
         await app.listen({ port: parseInt(process.env.PORT || "") || 8080, host: "0.0.0.0" });
+        console.log("started");
     } catch (error) {
         console.error(error);
     }
