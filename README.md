@@ -6,8 +6,9 @@ CI/CD - railway.app
 
 Для запуска нужно:
 
-1. npm i
-2. npm run build
-3. node build\server.js
+1. выполнить `npm i`
+2. выполнить `npm run build`
+3. выполнить `node build\server.js`
+4. зайти на http://localhost:8080/
 
 Также последняя версия запущена на https://tbolimpiada-production.up.railway.app/
